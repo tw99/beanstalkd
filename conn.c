@@ -1,10 +1,7 @@
 #include "dat.h"
-#include <errno.h>
-#include <limits.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <unistd.h>
 
 #define SAFETY_MARGIN (1000000000) /* 1 second */

@@ -28,7 +28,6 @@
 #define _GNU_SOURCE
 #endif
 
-#include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/socket.h>
 #include <sys/un.h>
@@ -36,12 +35,7 @@
 #include <netinet/in.h>
 #include <stdlib.h>
 #include <errno.h>
-#include <unistd.h>
 #include <string.h>
-#include <stdarg.h>
-#include <stdio.h>
-
-#include "sd-daemon.h"
 
 #define UNUSED_PARAMETER(x) (void)(x)
 

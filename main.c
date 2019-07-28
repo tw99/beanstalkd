@@ -1,13 +1,10 @@
 #include "dat.h"
-#include <stdint.h>
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
-#include <sys/stat.h>
 #include <unistd.h>
 #include <pwd.h>
-#include <fcntl.h>
 
 static void
 su(const char *user) 

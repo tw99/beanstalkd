@@ -1,15 +1,11 @@
 #include "dat.h"
-#include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
-#include <errno.h>
 #include <dirent.h>
 #include <sys/uio.h>
-#include <sys/stat.h>
-#include <limits.h>
 
 static int reserve(Wal *w, int n);
 

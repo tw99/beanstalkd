@@ -1,13 +1,9 @@
 #include "dat.h"
-#include <stdint.h>
 #include <inttypes.h>
 #include <stddef.h>
-#include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <stdarg.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <string.h>

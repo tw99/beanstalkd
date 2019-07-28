@@ -1,5 +1,4 @@
 #include "dat.h"
-#include <stdint.h>
 #include <stdlib.h>
 #include <sys/socket.h>
 
