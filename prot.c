@@ -1578,7 +1578,6 @@ dispatch_cmd(Conn *c)
             return;
         }
 
-
         if ((j->r.state == Buried && kick_buried_job(c->srv, j)) ||
             (j->r.state == Delayed && kick_delayed_job(c->srv, j))) {
             reply_msg(c, MSG_KICKED);
