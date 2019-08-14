@@ -79,7 +79,7 @@ heapinsert(Heap *h, void *x)
 
         ndata = malloc(sizeof(void*) * ncap);
         if (!ndata) {
-            return 0;
+            return twarn("OOM"), 0;
         }
 
         memcpy(ndata, h->data, sizeof(void*) * h->len);

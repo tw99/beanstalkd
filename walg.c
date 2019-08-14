@@ -407,7 +407,7 @@ waldirlock(Wal *w)
 
     path_length = strlen(w->dir) + strlen("/lock") + 1;
     if ((path = malloc(path_length)) == NULL) {
-        twarn("malloc");
+        twarn("OOM");
         return 0;
     }
     snprintf(path, path_length, "%s/lock", w->dir);

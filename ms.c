@@ -22,7 +22,7 @@ grow(Ms *a)
 
     nitems = malloc(ncap * sizeof(void *));
     if (!nitems)
-        return 0;
+        return twarnx("OOM"), 0;
 
     memcpy(nitems, a->items, a->len * sizeof(void *));
     free(a->items);

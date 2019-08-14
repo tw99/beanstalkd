@@ -11,7 +11,7 @@ make_tube(const char *name)
     Tube *t;
 
     t = new(Tube);
-    if (!t) return NULL;
+    if (!t) return twarnx("OOM"), NULL;
 
     t->name[MAX_TUBE_NAME_LEN - 1] = '\0';
     strncpy(t->name, name, MAX_TUBE_NAME_LEN - 1);
